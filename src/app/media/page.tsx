@@ -19,22 +19,20 @@ export default function MediaPage() {
 
         {/* Trailer */}
         <div className="mt-10 aspect-video w-full overflow-hidden rounded-xl border border-white/10 bg-white/5">
-          <iframe
-            className="h-full w-full"
-            src="https://www.youtube.com/watch?v=pO0kBuIdspI"
-            title="Race! Then Retry... — Trailer"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          />
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pO0kBuIdspI"
+                  title="Race! Then Retry... Gameplay Trailer 01"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen></iframe>
         </div>
 
         {/* Gameplay clips */}
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <video
-            className="rounded-lg border border-white/10 w-full h-auto"
-            controls
-            preload="metadata"
-            poster="/media/screenshot-1.svg"
+              className="rounded-lg border border-white/10 w-full h-auto"
+              controls
+              preload="metadata"
+              poster="/media/screenshot-1.svg"
           >
             <source src="/media/clip-1.webm" type="video/webm" />
             Your browser does not support the video tag.
