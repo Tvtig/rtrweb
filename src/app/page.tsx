@@ -50,7 +50,7 @@ export default function Home() {
                   className="mr-2"
                   aria-hidden
                 />
-                Wishlist on Steam
+                Get It on Steam
               </a>
               <Link
                 href="/media"
